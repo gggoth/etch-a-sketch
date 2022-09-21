@@ -6,13 +6,14 @@ body {
 
 .container {
     display: flex;
-    max-width: 32px;
-    max-height: 32px;
+    width: 960px;
+    height: 960px;
     flex-wrap: wrap;
-      
+         
 }
 
 #inGrid {
+    flex: 1;
     border: 1px solid black;
     width: 14px;
     height: 14px;
