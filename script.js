@@ -1,18 +1,16 @@
-const grid = document.querySelector('div');
 
-const gridElement = document.createElement('div');
-gridElement.setAttribute('id', 'inGrid');
-gridElement.textContent = "1"
 
-const gridElement1 = document.createElement('div');
-gridElement1.setAttribute('id', 'inGrid');
-gridElement1.textContent = "2"
 
-const gridElement2 = document.createElement('div');
-gridElement2.setAttribute('id', 'inGrid');
-gridElement2.textContent = "3"
+function createGrid(number){
 
-grid.appendChild(gridElement);
-grid.appendChild(gridElement1);
-grid.appendChild(gridElement2);
+    let grid = document.querySelector('.container');
+    grid.style.gridTemplateColumns = `repeat(${number}, 1fr)`;
+    grid.style.gridTemplateRows = `repeat(${number}, 1fr)`;
+
+    for (let i = 0; i < number*number; i++){
+        let element = document.createElement('div');
+        element.style.backgroundColor = "purple"
+        grid.insertAdjacentElement("beforeend", element);
+}
+}
 

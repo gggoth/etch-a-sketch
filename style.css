@@ -1,24 +1,23 @@
 body {
-    display: flex;
-    justify-content: center;
+        justify-content: center;
     
 }
 
 .container {
-    display: flex;
-    width: 960px;
-    height: 960px;
-    flex-wrap: wrap;
-         
+    width: 500px;
+    height: 500px;
+    display: grid;
+    border: 1px solid black;
+             
 }
 
 #inGrid {
-    flex: 1;
+    height: auto;
+    width: auto;
     border: 1px solid black;
-    width: 14px;
-    height: 14px;
     text-align: center;
     font-size: 10px;
-    margin: -0.5px;
+    margin: 0px;
+    
 }
 
