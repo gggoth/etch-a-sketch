@@ -3,20 +3,23 @@
   
 <head>
     <link rel="stylesheet" href="style.css">
-    
-    
     <meta charset="UTF-8">
     <title>Etch a sketch</title>
-
 </head>
 
 
 <body>
-
-    <div class="title">Etch a sketch</div>
+    <h1 class="title">Etch a sketch</h1>
+    <div class="buttons">
+        <button onclick="changeColor('white')">eraser</button>
+        <button onclick="changeColor('red')">red</button>
+        <button onclick="changeColor('black')">black</button>
+    </div>
     <div class="container"></div>
-    <input type="range" min="16" max="50" onchange="createGrid(this.value)" oninput="this.nextElementSibling.value = this.value"></input><output>16</output>
-    
+    <div class="slider">
+    <input type="range" min="16" max="50" defaultValue="16" onchange="createGrid(this.value)" oninput="this.nextElementSibling.value = this.value"></input>
+    <output>16</output>
+    </div>
 
     <script src="script.js"></script>
 </body>
