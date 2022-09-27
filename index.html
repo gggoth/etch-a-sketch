@@ -10,12 +10,15 @@
 
 <body>
     <h1 class="title">Etch a sketch</h1>
+
     <div class="buttons">
         <button onclick="changeColor('white')">eraser</button>
         <button onclick="changeColor('red')">red</button>
         <button onclick="changeColor('black')">black</button>
     </div>
+
     <div class="container"></div>
+    
     <div class="slider">
     <input type="range" min="16" max="50" defaultValue="16" onchange="createGrid(this.value)" oninput="this.nextElementSibling.value = this.value"></input>
     <output>16</output>
