@@ -31,3 +31,4 @@ function changeColor(choice){
     color = choice;
 
 }
+
